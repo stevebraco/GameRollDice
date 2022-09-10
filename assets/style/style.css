@@ -1,0 +1,100 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+}
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 76px;
+  text-transform: uppercase;
+  color: rgb(165, 165, 165);
+}
+
+
+button {
+  border: none;
+  background: transparent;
+  text-transform: uppercase;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+button img {
+  width: 32px;
+  object-fit: contain;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background: #EB4F4F;
+  border-radius: 50%;
+  display: none;
+}
+h1.active {
+  color: rgb(109, 109, 109);
+}
+h1.active span{
+ display: inline-block;
+}
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.current {
+  background: #EB4F4F;
+  padding: 0 15px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 55px;
+  text-transform: uppercase;
+}
+.current span {
+  color: #000000;
+  font-size: 25px;
+}
+.current p {
+  font-size: 32px;
+}
+.playerOne_scoreGlobal, .playerTwo_scoreGlobal {
+  font-size: 96px;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.wrapper__button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  gap: 50px;
+}
+
+.background {
+  position: absolute;
+  background: rgb(211, 211, 211);
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+}
+
+#winner {
+  text-align: center;
+}
