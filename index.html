@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/style/style.css">
+  <title>Roll Dice</title>
+</head>
+
+<body>
+  <div class="background"></div>
+  <section>
+    <div class="player1 container">
+      <h1 class="active"> player 1 <span class="circle"></span></h1>
+      <div>
+        <p class="playerOne_scoreGlobal">0</p>
+      </div>
+      <div class="current">
+        <span>current</span>
+        <p class="playerOne_scoreRound">0</p>
+      </div>
+    </div>
+    <div class="container d-flex">
+      <button id="new-game"> <img src="./assets/images/add.png" alt="add"> new game</button>
+      <div>
+        <img id="img-dice" src="./assets/images/dice_0.png" alt="dice">
+      </div>
+      <div class="wrapper__button">
+        <button id="roll-dice"> <img src="./assets/images/refresh-button.png" alt="refresh"> roll Dice</button>
+        <button id="hold"> <img src="./assets/images/download.png" alt="hold"> hold</button>
+      </div>
+      <p id="winner"></p>
+
+    </div>
+
+    <div class="player2 container">
+      <h1><span class="circle"></span> player 2 </h1>
+      <div>
+        <p class="playerTwo_scoreGlobal">0</p>
+      </div>
+      <div class="current">
+        <span>current</span>
+        <p class="playerTwo_scoreRound">0</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="./script/app.js"></script>
+</body>
+
+</html>
